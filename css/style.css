@@ -1,0 +1,29 @@
+.case {
+    background-color:white;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+
+}
+
+.cadre {
+    width: 800px;
+    background-color:blue;
+    
+}
+
+.pion {
+    width: 90px;
+    height: 90px;
+    color:red;
+    border-radius: 50%;
+    top: 0;
+    left:0;
+    position: absolute;
+}
+
+section {
+    width: 800px;
+}

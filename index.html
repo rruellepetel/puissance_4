@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Puissance 4</title>
+    </head>
+    <body>
+        <section id="board">
+
+        </section>
+
+    </body>
+    <script type="text/javascript">
+
+        var grille = 42;
+        var boardElement = document.getElementById("board");
+        var board = [];
+        board.className = "cadre"
+
+        for (var i = 0; i < grille; i++) {
+            var tableau = document.createElement("div");
+            tableau.className = "case"
+            boardElement.appendChild(tableau);
+
+            var pion = document.createElement("div");
+            pion.className = "pion"
+            tableau.appendChild(pion);
+
+        }
+        function whenclick() {
+
+        }
+    </script>
+</html>
