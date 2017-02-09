@@ -8,12 +8,6 @@
 
 }
 
-.cadre {
-    width: 800px;
-    background-color:blue;
-    
-}
-
 .pion {
     width: 90px;
     height: 90px;
@@ -25,5 +19,6 @@
 }
 
 section {
-    width: 800px;
+    width: 714px;
+    background-color: blue;
 }

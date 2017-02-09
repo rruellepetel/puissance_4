@@ -15,8 +15,7 @@
 
         var grille = 42;
         var boardElement = document.getElementById("board");
-        var board = [];
-        board.className = "cadre"
+        var tablo = aleatoir(grille);
 
         for (var i = 0; i < grille; i++) {
             var tableau = document.createElement("div");
@@ -26,10 +25,13 @@
             var pion = document.createElement("div");
             pion.className = "pion"
             tableau.appendChild(pion);
-
         }
-        function whenclick() {
-
+        function aleatoir(grille){
+        var tab = [];
+        for (var i = 0; i < grille/2; i++){
+            tab.push(i);
+            tab.push(i);
         }
+    }
     </script>
 </html>
