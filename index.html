@@ -10,33 +10,32 @@
         <section id="nav">
 
         </section>
-        <section id="board">
+        <table id="lelel">
 
-        </section>
+        </table>
     </body>
     <script type="text/javascript">
 
-        var grille = 42;
-        var column = 7;
-        var boardElement = document.getElementById("board");
+        var cols = 7;
+        var rows = 6;
+        var lelel = document.getElementById("lelel");
         var nav = document.getElementById("nav");
 
-        for (var j = 0; j < column; j++) {
+        for (var j = 0; j < cols; j++) {
         var button = document.createElement("button");
         button.className = "button"
         nav.appendChild(button);
         }
 
-        for (var i = 0; i < grille; i++) {
-            var tableau = document.createElement("div");
-            
-
-            tableau.className = "case"
-            boardElement.appendChild(tableau);
-
-            var pion = document.createElement("div");
-            pion.className = "pion"
-            tableau.appendChild(pion);
+        for (var j = 0; j < rows; j++) {
+            var ligne = document.createElement("tr");
+            ligne.className = "lignes";
+            lelel.appendChild(ligne);
+            for (var i = 0; i < cols; i++) {
+                var cases = document.createElement("td");
+                cases.className = "case";
+                ligne.appendChild(cases);
+            }
         }
     </script>
 </html>

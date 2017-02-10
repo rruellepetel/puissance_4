@@ -1,5 +1,4 @@
-section {
-    width: 714px;
+table {
     background-color: blue;
 }
 
@@ -26,7 +25,7 @@ section {
 .button {
     display: inline-flex;
     height: 50px;
-    width: 102px;
+    width: 104.5px;
     background-color: lightblue;
     border: 1px solid lightgrey;
 }
