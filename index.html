@@ -6,22 +6,27 @@
         <title>Puissance 4</title>
     </head>
     <body>
+        <p>alpha version</p>
+        <h1>POUR JOUER COLORIEZ L'ECRAN DSL</h1>
+        <section id="nav">
+
+        </section>
         <section id="board">
 
         </section>
-
+        <h2>Coming Soon Ma Frend</h2>
     </body>
     <script type="text/javascript">
 
         var grille = 42;
-        var boardElement = document.getElementById("board");
         var column = 7;
+        var boardElement = document.getElementById("board");
+        var nav = document.getElementById("nav");
 
-
-        for (var i = 0; i = column.length; i++) {
-            document.createElement ("div");
-            column.className = "button"
-            boardElement.appendChild(column);
+        for (var j = 0; j < column; j++) {
+        var button = document.createElement("div");
+        button.className = "button"
+        nav.appendChild(button);
         }
 
         for (var i = 0; i < grille; i++) {
@@ -32,6 +37,6 @@
             var pion = document.createElement("div");
             pion.className = "pion"
             tableau.appendChild(pion);
-    }
+        }
     </script>
 </html>

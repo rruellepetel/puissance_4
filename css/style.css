@@ -7,7 +7,7 @@ section {
     background-color:white;
     height: 100px;
     width: 100px;
-    display: inline-block;
+    display: inline-flex;
     border: 1px solid lightgrey;
     border-radius: 50%;
 
@@ -24,7 +24,9 @@ section {
 }
 
 .button {
+    display: inline-flex;
     height: 50px;
     width: 100px;
-    background-color: yellow;
+    background-color: lightblue;
+    border: 1px solid lightgrey;
 }
