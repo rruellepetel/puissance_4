@@ -6,7 +6,6 @@
         <title>Puissance 4</title>
     </head>
     <body>
-        <p>alpha version</p>
         <h1>POUR JOUER COLORIEZ L'ECRAN DSL</h1>
         <section id="nav">
 
@@ -14,7 +13,6 @@
         <section id="board">
 
         </section>
-        <h2>Coming Soon Ma Frend</h2>
     </body>
     <script type="text/javascript">
 
@@ -24,13 +22,15 @@
         var nav = document.getElementById("nav");
 
         for (var j = 0; j < column; j++) {
-        var button = document.createElement("div");
+        var button = document.createElement("button");
         button.className = "button"
         nav.appendChild(button);
         }
 
         for (var i = 0; i < grille; i++) {
             var tableau = document.createElement("div");
+            
+
             tableau.className = "case"
             boardElement.appendChild(tableau);
 
