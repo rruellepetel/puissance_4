@@ -18,24 +18,64 @@
 
         var cols = 7;
         var rows = 6;
+        var grid = generateGrid(rows, cols)
         var lelel = document.getElementById("lelel");
         var nav = document.getElementById("nav");
-    
+        var tour = "yellow";
+
         for (var j = 0; j < cols; j++) {
         var button = document.createElement("button");
-        button.className = "button"
+        button.className = "button";
+        button.setAttribute("onclick", "placerJeton("+j+")");
         nav.appendChild(button);
         }
 
+        function generateGrid(rows, cols) {
+            var tab = [];
+            for (var k = 0; k < rows; k++){
+                tab[k] = [];
+                for (var l = 0; l < cols; l++){
+                    tab[k][l] = "";
+                }
+            }
+            console.log(tab);
+            return tab;
+        }
+
+function placerJeton(col){
+    var index = 0;
+    while(index < rows && grid[index][col] == ""){
+        index++;
+    }
+    grid[index-1][col] = tour;
+    if (tour=="red") {
+        tour="yellow";
+    }else {
+        tour="red";
+    }
+
+
+    affichage();
+}
+
+
+    function affichage(){
+        lelel.innerHTML = "";
         for (var j = 0; j < rows; j++) {
             var ligne = document.createElement("tr");
-            ligne.className = "lignes";
             lelel.appendChild(ligne);
             for (var i = 0; i < cols; i++) {
                 var cases = document.createElement("td");
-                cases.className = "case";
+                if (grid[j][i] == "red"){
+                    cases.className = "red";
+                }if (grid[j][i] == "yellow"){
+                    cases.className = "yellow";
+                }
                 ligne.appendChild(cases);
             }
         }
+    }
+    affichage();
+
     </script>
 </html>

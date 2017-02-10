@@ -2,7 +2,7 @@ table {
     background-color: blue;
 }
 
-.case {
+td {
     background-color:white;
     height: 100px;
     width: 100px;
@@ -12,20 +12,16 @@ table {
 
 }
 
-.pion {
-    width: 90px;
-    height: 90px;
-    color:red;
-    border-radius: 50%;
-    top: 0;
-    left:0;
-    position: absolute;
-}
-
 .button {
     display: inline-flex;
     height: 50px;
     width: 104.5px;
     background-color: lightblue;
     border: 1px solid lightgrey;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
 }
